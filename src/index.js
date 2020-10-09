@@ -1,10 +1,8 @@
 import { createNote } from "./notes";
 import { setFilters } from "./filters";
 import { renderNotes } from "./views";
+import {createNoteElement, searchTextElement,  filterByElement} from './variables.js';
 
-const createNoteElement = document.querySelector("#create-note");
-const searchTextElement = document.querySelector("#search-text");
-const filterByElement = document.querySelector("#filter-by");
 
 renderNotes();
 

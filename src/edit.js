@@ -1,10 +1,7 @@
 import { initializeEditPage, generateLastEdited } from "./views";
 import { updateNote, removeNote } from "./notes";
+import { titleElement,  bodyElement,  removeElement,  dateElement } from './variables.js';
 
-const titleElement = document.querySelector("#note-title");
-const bodyElement = document.querySelector("#note-body");
-const removeElement = document.querySelector("#remove-note");
-const dateElement = document.querySelector("#last-edited");
 const noteId = location.hash.substring(1);
 
 initializeEditPage(noteId);
